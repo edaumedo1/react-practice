@@ -21,7 +21,9 @@ function App() {
     if (h1El === null || h1El === undefined) {
       return;
     }
-    console.log(h1El);
+    if (number >= 5) {
+      h1El.current.style.backgroundColor = "blue";
+    }
   }, [number]);
 
   console.log("일");
