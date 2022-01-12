@@ -34,6 +34,9 @@ export const foodILike = [
       "http://cdn2.koreanbapsang.com/wp-content/uploads/2012/05/DSC_1238r-e1454170512295.jpg",
     rating: 4.8,
   },
+  {
+
+  },
 ];
 
 export default function getFoodData() {

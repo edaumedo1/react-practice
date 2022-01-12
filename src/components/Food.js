@@ -24,7 +24,7 @@ Food.defaultProps = {
   name: "치킨",
   picture:
     "http://cdn2.koreanbapsang.com/wp-content/uploads/2012/05/DSC_1238r-e1454170512295.jpg",
-  rating: 10,
+  rating: 0,
 };
 
 export default Food;
