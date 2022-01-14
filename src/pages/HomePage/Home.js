@@ -1,5 +1,6 @@
 //ComponentDidMount //ComponentDidUpdate //ComponentWillUnmount
 import React, { useState, useEffect, useRef } from "react";
+import { Outlet } from "react-router-dom";
 import Food from "../../components/Food";
 import { foodILike } from "../../foodData";
 
@@ -60,6 +61,7 @@ function App() {
   //2
   return (
     <div>
+      <Outlet />
       <div>
         {foodILike.map((dish, i) => (
           <Food
