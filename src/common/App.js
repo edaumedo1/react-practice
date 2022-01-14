@@ -21,6 +21,7 @@ function App() {
           <Route path=":foods" element={<Detail />} />
         </Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/about" element={<About />}></Route>
       </Routes> */}
     </BrowserRouter>
   );
