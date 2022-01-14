@@ -1,17 +1,27 @@
 import React from "react";
 // import getFoodData from "./foodData";
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
+
 
 function Food({ name, picture, rating }) {
   // const data = [...getFoodData];
+  const navigate = useNavigate();
+  const movePage = () => {
+    navigate('/$name)',{
+      name,
+      picture,
+      rating,
+    });
+  }
 
-  return (
-    <div>
+return (
+    <div onClick = { movePage }>
       <h2>I like {name}</h2>
       <h4>{rating}/5.0</h4>
-      <img src={picture} alt={name} />
+      <img src={picture} alt={name} />  
     </div>
-  );
+  );    
 }
 
 Food.propTypes = {

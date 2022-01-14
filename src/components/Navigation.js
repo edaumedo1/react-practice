@@ -10,6 +10,9 @@ function Navigation(){
         <li>
             <Link to="/about">소개</Link>
         </li>
+        <li>
+            <Link to="/{name}">소개</Link>
+        </li>
     </ul>
   );
 }
