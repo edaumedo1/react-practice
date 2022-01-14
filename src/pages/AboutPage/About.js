@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-function App() {
+function About() {
   const navigate = useNavigate();
   // useEffect(() => {
   //   navigate(-1);
@@ -9,4 +9,4 @@ function App() {
   return <div>안녕</div>;
 }
 
-export default App;
+export default About;
