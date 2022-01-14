@@ -5,7 +5,7 @@ function Navigation(){
   return (
     <ul>
         <li>
-            <Link to="/">홈</Link>
+            <Link to="/">홈커밍</Link>
         </li>
         <li>
             <Link to="/about">소개</Link>
