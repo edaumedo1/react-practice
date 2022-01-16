@@ -2,12 +2,12 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Navigation() {
-  const navigate = useNavigate();
-  const goBack = () => {
-    navigate(-1);
+  const navigate = useNavigate(); //네비게이션 선언
+  const goBack = () => { 
+    navigate(-1); //number = 음수: 이전페이지, 양수: 다음페이지
   };
 
-  return (
+  return (// Link = to="": (JAVA)href=""
     <ul>
       <li>
         <Link to="/">홈</Link>
@@ -16,7 +16,10 @@ function Navigation() {
         <Link to="/about">소개</Link>
       </li>
       <li>
-        <span onClick={goBack}>뒤로가기</span>
+        <Link to="/test">테스트</Link>
+      </li>
+      <li>
+        <span onClick={goBack}>뒤로가기</span>{/* onClick => navigate(-1) */}
       </li>
     </ul>
   );

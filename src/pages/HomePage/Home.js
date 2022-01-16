@@ -4,22 +4,22 @@ import { Outlet } from "react-router-dom";
 import Food from "../../components/Food";
 import { foodILike } from "../../foodData";
 
-function addNumber(number, setNumber) {
+function addNumber(number, setNumber) { // +버튼에 쓰임
   setNumber(number + 1); // +1
   console.log(number); // 0
 }
 
-function subtractNumber(number, setNumber) {
+function subtractNumber(number, setNumber) {// -버튼에 쓰임
   setNumber(number - 1);
   console.log(number);
 }
 
-function App() {
+function App() { // App 컴포넌트
   //main
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState(0); // useState number 선언
   //1
-  const h1El = useRef(); // const h1el = document.getElementById('h1')
-  const firstBtn = useRef();
+  const h1El = useRef(); // const h1el = document.getElementById('h1'), 
+  const firstBtn = useRef(); //use
   const secondBtn = useRef();
   //3
   useEffect(() => {
@@ -29,10 +29,10 @@ function App() {
       });
 
       firstBtn.current.addEventListener("click", () => {
-        document.body.style.backgroundColor = "black";
+        // document.body.style.backgroundColor = "black";
       });
       secondBtn.current.addEventListener("click", () => {
-        document.body.style.backgroundColor = "white";
+        // document.body.style.backgroundColor = "white";
       });
 
       if (number >= 5) {
@@ -63,7 +63,7 @@ function App() {
     <div>
       <Outlet />
       <div>
-        {foodILike.map((dish, i) => (
+        {foodILike.map((dish, i) => ( // map => foodILike.data 전부 가져옴
           <Food
             key={i}
             name={dish.name}

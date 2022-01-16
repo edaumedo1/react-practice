@@ -4,6 +4,7 @@ import Home from "../pages/HomePage/Home";
 import About from "../pages/AboutPage/About";
 import Navigation from "../components/Navigation.js";
 import Detail from "../pages/DetailPage/Detail";
+import Sample from "../pages/SamplePage/Imputsample";
 
 function App() {
   return (
@@ -13,13 +14,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/food/:foods" element={<Detail />} />
+        <Route path="/test" element={<Sample />}></Route>
         <Route path="/about" element={<About />}></Route>
       </Routes>
       {/* <Routes>
         <Route path="/" element={<Home />}>
         // 컴포넌트로써 라우팅
-          <Route path=":foods" element={<Detail />} />
-        </Route>
+        <Route path=":foods" element={<Detail />} /></Route>
         <Route path="/about" element={<About />}></Route>
       </Routes> */}
     </BrowserRouter>
