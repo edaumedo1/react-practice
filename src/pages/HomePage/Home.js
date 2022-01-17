@@ -42,7 +42,7 @@ function App() { // App 컴포넌트
       }
     }
 
-    return () => {
+    return () => {// 타 페이지로 넘어갈 때 return 값
       if (h1El.current && firstBtn.current && secondBtn.current) {
         h1El.current.removeEventListener("click", () => {
           console.log("ssss");
